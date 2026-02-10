@@ -1,4 +1,3 @@
-
 export interface UserProfile {
   name: string;
   phone?: string;
@@ -7,11 +6,11 @@ export interface UserProfile {
 export interface Booking {
   id: string;
   name: string;
-  phone?: string; // Lưu thêm số điện thoại vào booking để quản lý dễ hơn
-  checkIn: string; // ISO string
-  departure: string; // ISO string
+  phone?: string;
+  checkIn: string;
+  departure: string;
   createdAt: string;
-  groupId?: string; // Để nhận diện các booking thuộc cùng một chuỗi lặp lại
+  groupId?: string;
 }
 
 export interface AssistantResponse {
@@ -21,9 +20,4 @@ export interface AssistantResponse {
   departure?: string;
   isRecurring?: boolean;
   message: string;
-}
-
-export interface Conflict {
-  booking1: Booking;
-  booking2: Booking;
 }
