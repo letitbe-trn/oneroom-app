@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Booking, UserProfile } from './types';
-import BookingForm from './components/BookingForm';
-import BookingList from './components/BookingList';
-import SmartAssistant from './components/SmartAssistant';
-import UserProfileCard from './components/UserProfileCard';
-import { syncToGoogleSheet } from './services/googleSheetService';
+import { Booking, UserProfile } from './types.ts';
+import BookingForm from './components/BookingForm.tsx';
+import BookingList from './components/BookingList.tsx';
+import SmartAssistant from './components/SmartAssistant.tsx';
+import UserProfileCard from './components/UserProfileCard.tsx';
+import { syncToGoogleSheet } from './services/googleSheetService.ts';
 
 const STORAGE_KEY = 'oneroom_bookings';
 const PROFILE_KEY = 'oneroom_user_profile';
